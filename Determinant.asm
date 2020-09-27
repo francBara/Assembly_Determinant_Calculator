@@ -1,7 +1,9 @@
-#4X4 MATRIX
+#3X3 MATRIX
 .globl MAIN
 .data
+#Matrix dimension (length of rows and columns)
 .eqv SIZE, 3
+#Allocation of the matrix in bytes (SIZE*SIZE*4)
 MATRIX: .space 36
 #Array that contains size-1 elements and stores the indexes of already scanned numbers
 MINOR_QUEUE: .space 8
